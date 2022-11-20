@@ -26,7 +26,6 @@ class TaskListViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         taskList = StorageManager.shared.fetchData()
-        tableView.reloadData()
     }
 
     private func setupNavigationBar() {
